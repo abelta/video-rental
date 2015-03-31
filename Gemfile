@@ -53,10 +53,12 @@ group :development, :test do
 
   # Jasmine test suite for Javascript tests.
   gem 'jasmine'
+
+  gem 'faker'
 end
 
 group :test do
-    gem 'faker'
+    
     gem 'capybara'
     gem 'database_cleaner'
     gem 'launchy'

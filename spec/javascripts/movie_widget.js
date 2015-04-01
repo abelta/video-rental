@@ -1,0 +1,13 @@
+describe("MovieWidget", function(){
+
+    beforeEach(function(){
+
+        var data = {"id":"771312088","title":"The Hunger Games: Mockingjay - Part 1","year":2014,"mpaa_rating":"PG-13","runtime":125,"critics_consensus":"","release_dates":{"theater":"2014-11-21","dvd":"2015-03-06"},"ratings":{"critics_rating":"Fresh","critics_score":65,"audience_rating":"Upright","audience_score":74},"synopsis":"The worldwide phenomenon of The Hunger Games continues to set the world on fire with The Hunger Games: Mockingjay - Part 1, which finds Katniss Everdeen (Jennifer Lawrence) in District 13 after she literally shatters the games forever. Under the leadership of President Coin (Julianne Moore) and the advice of her trusted friends, Katniss spreads her wings as she fights to save Peeta (Josh Hutcherson) and a nation moved by her courage. The Hunger Games: Mockingjay - Part 1 is directed by Francis Lawrence from a screenplay by Danny Strong and Peter Craig and produced by Nina Jacobson's Color Force in tandem with producer Jon Kilik. The novel on which the film is based is the third in a trilogy written by Suzanne Collins that has over 65 million copies in print in the U.S. alone. (c) Lionsgate","posters":{"thumbnail":"http://resizing.flixster.com/o5LFh1rOsPGEtzQEDloy-4HQsjE=/54x81/dkpu1ddg7pbsk.cloudfront.net/movie/11/18/98/11189899_ori.jpg","profile":"http://resizing.flixster.com/o5LFh1rOsPGEtzQEDloy-4HQsjE=/54x81/dkpu1ddg7pbsk.cloudfront.net/movie/11/18/98/11189899_ori.jpg","detailed":"http://resizing.flixster.com/o5LFh1rOsPGEtzQEDloy-4HQsjE=/54x81/dkpu1ddg7pbsk.cloudfront.net/movie/11/18/98/11189899_ori.jpg","original":"http://resizing.flixster.com/o5LFh1rOsPGEtzQEDloy-4HQsjE=/54x81/dkpu1ddg7pbsk.cloudfront.net/movie/11/18/98/11189899_ori.jpg"},"abridged_cast":[{"name":"Jennifer Lawrence","id":"770800260","characters":["Katniss Everdeen"]},{"name":"Liam Hemsworth","id":"770833479","characters":["Gale Hawthorne"]},{"name":"Josh Hutcherson","id":"162654356","characters":["Peeta Mellark"]},{"name":"Julianne Moore","id":"162654248","characters":["President Alma Coin"]},{"name":"Sam Claflin","id":"771073196","characters":["Finnick"]}],"alternate_ids":{"imdb":"1951265"},"links":{"self":"http://api.rottentomatoes.com/api/public/v1.0/movies/771312088.json","alternate":"http://www.rottentomatoes.com/m/the_hunger_games_mockingjay_part_1/","cast":"http://api.rottentomatoes.com/api/public/v1.0/movies/771312088/cast.json","reviews":"http://api.rottentomatoes.com/api/public/v1.0/movies/771312088/reviews.json","similar":"http://api.rottentomatoes.com/api/public/v1.0/movies/771312088/similar.json"}}
+    });
+
+    it("has a @dom attribute");
+
+    it("has a @data attribute");
+
+
+});

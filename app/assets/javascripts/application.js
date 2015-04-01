@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+
+//= require handlebars-v3.0.0
+
+//= require movie_widget
+//= require movie_index
+//= require movie_search
+
 //= require_tree .

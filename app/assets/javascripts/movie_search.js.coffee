@@ -2,7 +2,6 @@ class MovieSearch
 
 
     constructor: (@dom) ->
-        console.log 'MovieSearch-constructor'
         handleKeyup = (ev) =>
             do @submit if ev.keyCode == 13
         jQuery(@dom).keyup(handleKeyup)
@@ -10,7 +9,6 @@ class MovieSearch
 
 
     submit: ->
-        console.log 'MovieSearch-submit'
         q = jQuery(@dom).val()
         jQuery(@dom).val('')
         @movieIndex.search q

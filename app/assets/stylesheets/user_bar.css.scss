@@ -2,9 +2,13 @@
 
     margin-bottom: 40px;
     
+    * {
+        margin-right: 20px;
+    }
+
     a {
         text-decoration: none;
-
+        
         &:hover {
             text-decoration: underline;
         }

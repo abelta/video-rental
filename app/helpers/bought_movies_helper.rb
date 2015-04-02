@@ -1,0 +1,2 @@
+module BoughtMoviesHelper
+end

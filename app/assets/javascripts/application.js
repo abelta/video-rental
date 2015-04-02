@@ -15,7 +15,9 @@
 //= require turbolinks
 
 //= require handlebars-v3.0.0
+//= require handlebars_helpers
 
+//= require bought_movies
 //= require movie_widget
 //= require movie_index
 //= require movie_search

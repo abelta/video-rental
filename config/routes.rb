@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
   
+  get 'bought_movies(.format)', to: 'bought_movies#index', as: 'bought_movies'
+  post 'movies/buy', to: 'movies#buy'
+
   root to: 'movies#index'
 
   devise_for :users , controllers: { confirmations: "users/confirmations", passwords: "users/passwords", registrations: "users/registrations", sessions: "users/sessions", unlocks: "users/unlocks" }
-
-  resources :movies
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,31 +1,28 @@
 class MovieIndex
 
+    if jQuery('#movie_widget_template').length > 0
+        template = Handlebars.compile( jQuery('#movie_widget_template').html() )
+    else
+        template = Handlebars.compile('')
 
     constructor: (@dom) ->
-        console.log 'MovieIndex-constructor'
         do @search
 
 
     initializeMovies: (data) =>
-        console.log 'initializeMovies'
         jQuery(@dom).empty()
         for movie in data.movies
-            console.log 'movie', movie
             movieWidget = new window.application.MovieWidget movie
             jQuery(@dom).append(movieWidget.dom)
-            
-            
-
-
-    handleError: (data) =>
-        console.log 'handleError'
-        new Flash "There's been an error.", 'error'
 
 
     ##
     # Search is possible with an empty query.
     ##
     search: (q) =>
+        handleError = (data) ->
+            new Flash "There's been an error.", 'error'
+
         if q
             api_anchor = "http://api.rottentomatoes.com/api/public/v1.0/movies.json"
             search_data = 
@@ -44,7 +41,7 @@ class MovieIndex
                 crossDomain: true
             )
             .success(@initializeMovies)
-            .fail(@handleError)
+            .fail(handleError)
 
 
 

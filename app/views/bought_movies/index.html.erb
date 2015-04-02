@@ -1,0 +1,20 @@
+<div class="container">
+
+
+  <div class="header">
+    <h2>Library</h2>
+  </div>
+
+  <% @bought_movies.each do |bought_movie| %>
+    <div class="row">
+      <div class="six columns">
+        <%= bought_movie.title %>
+      </div>
+      <div class="four columns">
+        <img src="<%= bought_movie.poster_url -%>" alt="<%= bought_movie.title -%>" />
+      </div>
+    </div>
+  <% end %>    
+
+
+</div>

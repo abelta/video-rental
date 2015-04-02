@@ -1,4 +1,3 @@
-
 class Flash
 
     constructor: (message, level=warning) ->

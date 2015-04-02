@@ -22,7 +22,11 @@
       <p class="runtime">Runtime: {{runtime}} minutes</p>
       <p class="synopsis">{{synopsis}}</p>
       <% if user_signed_in? %>
-        <button class="buy_movie_button button-primary">BUY</button>
+        {{#ifInBoughtList id}}
+          <button class="buy_movie_button button-primary" disabled="disabled">IN LIBRARY</button>
+        {{else}}
+          <button class="buy_movie_button button-primary" >BUY €2.99</button>
+        {{/ifInBoughtList}}
       <% else %>
         <button class="show_login_button button-primary">BUY</button>
         <aside class="login_advertise" style="display:none">

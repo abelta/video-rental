@@ -14,20 +14,20 @@
       
       <span>Loged in as <%= current_user.name -%></span>
       <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-      
+      <%= link_to('Library', bought_movies_path) %>
     <% else %>
       
       <%= link_to('Login', new_user_session_path)  %>  
       
     <% end %>
 
-    <%= link_to 'home', root_path %>
+    <%= link_to 'Home', root_path %>
   </div>
 
 
 
   <% unless flash.empty? %>
-    <div class="flash-notices">
+    <div class="flash-notices container">
       
       <% flash.each do |key, value| %>
         <div class="<%= key %>"><%= value %></div>

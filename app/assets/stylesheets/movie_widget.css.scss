@@ -1,0 +1,10 @@
+.movie_widget {
+
+    .buy_movie_button {
+
+        &[disabled]{
+            background-color: grey;
+        }
+    }
+
+}

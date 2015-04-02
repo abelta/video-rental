@@ -9,4 +9,12 @@ class User < ActiveRecord::Base
   validates :email, presence: true
   validates :encrypted_password, presence: true
 
+  has_many :bought_movies
+
+
+
+  def buy_movie (movie_params)
+    self.bought_movies.create! movie_params
+  end
+
 end

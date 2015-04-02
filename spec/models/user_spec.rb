@@ -5,7 +5,7 @@ RSpec.describe User, :type => :model do
   context "validations" do
       
     it "has a valid factory" do
-        expect( build(:user) ).to be_valid
+      expect( build(:user) ).to be_valid
     end
 
     it "is not valid without a name" do
@@ -31,6 +31,19 @@ RSpec.describe User, :type => :model do
       user = build :user, email: "example1@gmail.com"
       user.valid?
       expect( user.errors[:email].size ).to be >= 1
+    end
+
+  end
+
+
+  context "buy_movie" do
+
+    it "add a new movie to the user's bought movies" do
+      user = create :user
+      movie = build :bought_movie
+      expect {
+        user.buy_movie attributes_for(:bought_movie)
+      }.to change{ user.bought_movies.count }.by 1
     end
 
   end

@@ -1,7 +1,16 @@
 == Video Rental
 
 This is a Rails and Javascript application demonstrating a video rental online store.
+User authentication is handled with Devise.
+Movie data is taken from the Rotten Tomatoes API via Ajax.
+
+== Installation
+
+Clone the repository and run `rake db:migrate`
+Install gem dependencies with `bundle install`
+Run the server with `rails s`
 
 == Tests
 
 Run `rake jasmine` for Javascript tests and `rspec` for rails model and controller tests.
+Tests are currently incomplete and some specs are pending.
